@@ -5,12 +5,11 @@ const mongoose= require('mongoose');
 const ShortUrl = require('./UrlSchema');
 
 const port = process.env.PORT || 3000;
-const URL = process.env.URL;
 
 const app = express();
 
 mongoose.set("strictQuery", false);
-mongoose.connect(URL, {useNewUrlParser: true}).then(console.log("mongo connected")).catch(err=>{console.log(err)});
+mongoose.connect("mongodb://0.0.0.0:27017/urlshortener", {useNewUrlParser: true}).then(console.log("mongo connected")).catch(err=>{console.log(err)});
 
 app.use(express.static('public'));
 
