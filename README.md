@@ -4,6 +4,8 @@ It shows clicks per click on the shortened url.
 
 # website:
 
+https://urlshortener-macd.onrender.com/
+
 # Technologies used:
 
 HTML, CSS, Javascript, NodeJS, Express, MongoDB.
